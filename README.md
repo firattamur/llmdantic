@@ -2,7 +2,7 @@
 
 <p align="center">
   <picture> 
-    <img src=".github/assets/llmdantic.png" alt="image" width="300">
+    <img src="https://raw.githubusercontent.com/firattamur/llmdantic/main/.github/assets/llmdantic.png" alt="image" width="300">
   </picture>
 </p>
 
