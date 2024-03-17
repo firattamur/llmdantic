@@ -1,0 +1,50 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "llmdantic"
+authors = [{ name = "firattamur", email = "ftamur16@ku.edu.tr" }]
+readme = "README.md"
+license = { file = "LICENSE" }
+
+dependencies = [
+    "langchain >=0.1.6",
+    "langchain_openai >=0.0.5",
+    "regex >=2023.12.25",
+]
+requires-python = ">=3.8"
+classifiers = ["Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dynamic = ['version', 'description']
+
+[project.urls]
+Home = "https://github.com/firattamur/llmdantic"
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "ruff",
+    "mypy",
+    "isort",
+    "black",
+    "black",
+    "flit",
+    "coverage",
+    "bump2version",
+]
+
+[tool.isort]
+profile = "black"
+skip = ["__init__.py"]
+
+
+[tool.ruff]
+line-length = 120
+
+[tool.coverage.run]
+branch = true
+omit = ["tests/*", "*/__init__.py"]

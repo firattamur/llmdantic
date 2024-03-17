@@ -1,0 +1,9 @@
+pytest==8.0.1
+ruff==0.2.2
+mypy==1.8.0
+isort==5.13.2
+black==24.2.0
+flit==3.9.0
+coverage==7.4.3
+bump2version==1.0.1
+pre-commit
